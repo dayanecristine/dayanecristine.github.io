@@ -1,0 +1,44 @@
+1,brigadeiro de colher,5
+2,brigadeiro de chocolate,2
+3,brigadeiro de chocolate belga,2
+4,brigadeiro de leite ninho,2
+5,brigadeiro de nutella,2.5
+6,brigadeiro de maracuja,2
+7,brigadeiro de morango,2.5
+8,brigadeiro de leite ninho,2
+9,brigadeiro de chocolate recheado,3
+10,brigadeiro de leite ninho recheado,3
+11,brigadeiro de nuttela recheado,3
+12,brigadeiro de maracuja recheado,3
+13,brigadeiro de morango recheado,3
+14,brigadeiro de leite ninho recheado,3
+15,empada de queijo,3
+42,empada de presunto,3
+43,empada de queijo e presunto,3
+16,empada de camarão,3
+17,empada de frango,3
+18,empada doce de doce de leite,3
+19,empada doce de chocolate,3
+20,empada doce de leite ninho,3
+21,empada doce de nutella,3
+22,picole de milho verde,1
+23,picole de tapioca,1
+24,picole de flocos,1
+25,picole de acai,1
+26,picole de acai com tapioca,1
+27,picole de chocolate,1
+28,picole de morango,1
+29,picole de doce de leite,1
+30,sorvete de milho verde,1
+31,sorvete de tapioca,1
+32,sorvete de flocos,1
+33,sorvete de acai,1
+34,sorvete de acai com tapioca,1
+35,sorvete de chocolate,1
+36,sorvete de morango,1
+37,sorvete de doce de leite,1
+38,picole kit kat,8
+39,picole magnum,8.50
+40,picole chicabom,6.75
+41,picole de brigadeiro,3.75
+

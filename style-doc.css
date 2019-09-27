@@ -1,0 +1,44 @@
+.equipe{
+    width: 100%; text-align: center;
+}
+
+.equipe h2{
+    line-height: 0.53ch;
+}
+
+.container{
+    width: 100%;
+    padding: 50px;
+}
+
+table{
+    table-layout: fixed;
+    text-align: center;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black; */
+}
+
+tr{
+    background: white;
+}
+
+tr:hover{
+    background: rgb(240, 240, 240)
+}
+
+.links{
+    position: fixed;
+}
+
+.links a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px
+}.links a:hover{
+    background: rgb(240, 240, 240);
+}.links a:active{
+    background: rgb(210, 210, 210);
+
+}
+
