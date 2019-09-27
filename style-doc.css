@@ -34,11 +34,10 @@ tr:hover{
     text-decoration: none;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 3px
+    padding: 3px;
+    background: white
 }.links a:hover{
     background: rgb(240, 240, 240);
 }.links a:active{
     background: rgb(210, 210, 210);
-
 }
-

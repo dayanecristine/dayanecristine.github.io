@@ -30,8 +30,11 @@
         Gabriel de Queiroz Sousa
         Yasser Schuck Antonio Tuma -->
     </div>
-    <div class="container">
-        <div>
+
+    
+    <img style="width: 90%; margin-left: 5%" src="caso-de-uso.jpg" alt="">
+    <div class="container" id="container-casos-de-uso">
+        <div class="item-caso">
             <h1>Avaliar Produto - UC001</h1>
             <h3>
                 O ator deve ser capaz de avaliar o produto adquirido.
@@ -56,19 +59,625 @@
             <ul>
                 <li>
                     O produto deve estar avaliado no sistema.
-        
+                    
                 </li>
             </ul>
-
+            
         </div>    
+        
+        <div>
+            <h1>
+                Avaliar vendedor - UC002
+            </h1>
+            <h3>
+                O ator deve ser capaz de avaliar o atendimento com o vendedor.
+
+            </h3>
+            Ator:
+            <ul>
+                <li>
+                    Consumidor
+                </li>
+            </ul>
+            Pré-condições:
+            <ul>
+                <li>
+                    O ator deve estar logado no sistema.
+                </li>
+                <li>
+                    O ator deve ter entrado em contato com o vendedor.
+                </li>
+            </ul>
+            Pós-condições
+            <ul>
+                <li>
+                    O vendedor deve estar avaliado no sistema.
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div>
+            <h1>
+                Cadastrar produto - UC003
+            </h1>
+            <h3>
+                O ator deve ser capaz de cadastrar novos produtos no sistema.
+            </h3>
+                Ator:
+            <ul>
+                <li>
+                     Produto
+                </li>
+            </ul>
+                Pré-condições:
+                <ul>
+                    <li>
+                        ● O ator deve estar logado no sistema.
+                    </li>
+                    <li>
+                        ● O ator estar na tela cadastrar produtos.
+                    </li>
+                </ul>
+                Pós-condições
+                <ul>
+                    <li>
+                        ● Os produtos devem estar cadastrados no sistema.
+                    </li>
+                </ul>
+        </div>
+
+        <div>
+            <h1>
+                Cadastrar usuário - UC004
+            </h1>
+            <h3>
+                O ator deve ser capaz de cadastrar novos usuários no sistema.
+
+            </h3>
+
+                Ator:
+                <ul>
+                    <li>
+                        ● Consumidor e vendedor
+
+                    </li>
+                </ul>
+                Pré-condições:
+                <ul>
+                    <li>
+                        ● O ator deve estar na página inicial do sistema.
+
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        ● O ator deve ter permissão de cadastrar usuário.
+
+                    </li>
+                </ul>
+
+                Pós-condições
+                <ul>
+                    <li>
+                        ● O consumidor deve estar cadastrado no sistema.
+
+                    </li>
+                    <li>
+                        ● O vendedor deve estar cadastrado no sistema.
+
+                    </li>
+                </ul>
+        </div>
+
+        
+
     </div>
     
 
 
+    <script>
+        class Caso{
+            constructor(titulo, descricao, atores, precond, poscond){
+                this.titulo = titulo || "";
+                this.descricao = descricao || "";
+                this.atores = atores || []
+                this.precond = precond || []
+                this.poscond = poscond || []
+            }
+        }
+
+        var casos = []
+
+        casos.push(
+            new Caso(
+        "Avaliar Produto - UC001",
+        "O ator deve ser capaz de avaliar o produto adquirido.",
+            [
+        "Consumidor"
+            ],
+            [
+        "O ator deve estar logado no sistema.",
+        "O ator deve ter adquirido algum produto."
+            ],
+            [
+        "O produto deve estar avaliado no sistema."
+            ]
+            )
+        )
+
+        casos.push(
+            new Caso(
+        "Avaliar vendedor - UC002",
+        "O ator deve ser capaz de avaliar o atendimento com o vendedor.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve ter entrado em contato com o vendedor.",
+
+                ],
+                [
+        "O vendedor deve estar avaliado no sistema.",
+
+                ],
+            )
+        )
+
+        casos.push(
+            new Caso(
+        "Cadastrar produto - UC003",
+        "O ator deve ser capaz de cadastrar novos produtos no sistema.",
+                [
+        "Produto",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator estar na tela cadastrar produtos.",
+
+                ],
+                [
+        "Os produtos devem estar cadastrados no sistema.",
+
+                ],
+            )
+        )
+        casos.push(
+            new Caso(
+        "Cadastrar usuário - UC004",
+        "O ator deve ser capaz de cadastrar novos usuários no sistema.",
+                [
+        "Consumidor e vendedor",
+
+                ],
+                [
+        "O ator deve estar na página inicial do sistema.",
+        "O ator deve ter permissão de cadastrar usuário.",
+
+                ],
+                [
+        "O consumidor deve estar cadastrado no sistema.",
+        "O vendedor deve estar cadastrado no sistema.",
+
+                ],
+            )
+        )
+        
+        casos.push(
+            new Caso(
+        "Colocar no carrinho - UC005",
+        "O ator deve ser capaz de realizar a compra de vários produtos ao mesmo tempo.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator estar logado no sistema.",
+        "O ator deve estar na página de listagem de produtos.",
+
+                ],
+                [
+        "Os produtos devem estar listados no sistema.",
+
+                ],
+            )
+        )
+
+        casos.push(
+            new Caso(
+        "Confirmar entrega - UC006",
+        "O ator deve ser capaz de confirmar os produtos que possui interesse.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "Os produtos devem estar listados no carrinho.",
+        "O ator deve estar na página do carrinho.",
+
+                ],
+                [
+        "Os produtos devem estar confirmados no sistema.",
+
+                ],
+            )
+        )
+        
+        casos.push(
+            new Caso(
+        "Confirmar pagamento - UC007",
+        "O ator deve ser capaz de confirmar o pagamento.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve estar na página de confirmação de pagamento.",
+
+                ],
+                [
+        "O pagamento deve estar confirmado no sistema.",
+
+                ],
+            )
+        )
+
+        casos.push(
+            new Caso(
+        "Finalizar compra - UC008",
+        "O ator deve ser capaz de finalizar a compra.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve estar na página de finalizar compra.",
+
+                ],
+                [
+        "A compra deve estar finalizada no sistema.",
+
+                ],
+            )
+        )
+
+        
+         
+        
+        casos.push(
+            new Caso(
+        "Listar produtos - UC009",
+        "O ator deve ser capaz de listar os produtos no sistema.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve estar na página de listar produtos.",
+
+                ],
+                [
+        "Os produtos devem estar listados no sistema.",
+
+                ],
+            )
+        )
+
+         
+        casos.push(
+            new Caso(
+        "Listar vendedores - UC010",
+        "O ator deve ser capaz de listar os vendedores no sistema.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve possuir permissão de listar vendedores.",
+        "O ator deve estar na página de listar vendedores.",
+
+                ],
+                [
+        "Os vendedores devem estar listados no sistema.",
+
+                ],
+            )
+        )
+        
+         
+        
+        casos.push(
+            new Caso(
+        "Remover do carrinho - UC011",
+        "O ator deve ser capaz de remover itens do carrinho.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "Os produtos devem estar listados no carrinho.",
+        "O ator deve estar na página do carrinho.",
+
+                ],
+                [
+        "Os produtos devem ser removidos do carrinho no sistema.",
+
+                ],
+            )
+        )
+         
+        casos.push(
+            new Caso(
+        "Selecionar local de entrega - UC012",
+        "O ator deve ser capaz de selecionar o local de entrega.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve estar na página de local de entrega.",
+
+                ],
+                [
+        "O local de entrega deve estar selecionada no sistema.",
+
+                ],
+            )
+        )
+         
+        casos.push(
+            new Caso(
+        "Selecionar vendedor - UC013",
+        "O ator deve ser capaz de selecionar o vendedor.",
+                [
+        "Consumidor",
+
+                ],
+                [
+        "O ator deve estar logado no sistema.",
+        "O ator deve estar na página de listar vendedores.",
+
+                ],
+                [
+        "O vendedor deve estar selecionado no sistema.",
+
+                ],
+            )
+        )
+         
+        // casos.push(
+        //     new Caso(
+        // "Listar Vendedores - UC014",
+        // "O ator deve poder listar os vendedores no sistema",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve estar na tela Listar Vendedores",
+
+        //         ],
+        //         [
+        // "Os vendedores devem estar listados no sistema",
+
+        //         ],
+        //     )
+        // )
+         
+        // casos.push(
+        //     new Caso(
+        // "Selecionar Vendedor - UC015",
+        // "O ator deve poder selecionar um vendedor no sistema",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve estar na tela Listar Vendedores",
+
+        //         ],
+        //         [
+        // "Deve estar exibido a lista de produtos do vendedor selecionado",
+
+        //         ],
+        //     )
+        // )
+         
+        // casos.push(
+        //     new Caso(
+        // "Listar Produtos - UC016",
+        // "O ator deve poder listar os produtos no sistema",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve estar na tela Listar Produtos",
+
+        //         ],
+        //         [
+        // "Os produtos devem estar listados no sistema",
+
+        //         ],
+        //     )
+        // )
+         
+        // casos.push(
+        //     new Caso(
+        // "Remover do Carrinho - UC017",
+        // "O ator deve poder remover um produto ao carrinho",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve estar na tela Visualizar Carrinho",
+
+        //         ],
+        //         [
+        // "O produto selecionado deverá ter sido excluído do carrinho",
+
+        //         ],
+        //     )
+        // )
+         
+        // casos.push(
+        //     new Caso(
+        // "Selecionar Local de Entrega - UC018",
+        // "O ator deve poder selecionar o local de entrega do produto",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve ter adicionado um ou mais itens ao Carrinho",
+        // "O ator deve estar na tela Selecionar Local de entrega",
+
+        //         ],
+        //         [
+        // "O local de entrega deve estar selecionado",
+
+        //         ],
+        //     )
+        // )
+         
+        // casos.push(
+        //     new Caso(
+        // "Selecionar Forma de Pagamento - UC019",
+        // "O ator deve poder selecionar a forma de pagamento",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve ter adicionado um ou mais itens ao Carrinho",
+        // "O ator deve estar na tela Selecionar Forma de Pagamento",
+
+        //         ],
+        //         [
+        // "A forma de pagamento deve estar selecionada",
+
+        //         ],
+        //     )
+        // )
+         
+        
+        // casos.push(
+        //     new Caso(
+        // "Finalizar Compra - UC020",
+        // "O ator deve poder finalizar a sua compra",
+        //         [
+        // "Usuário",
+
+        //         ],
+        //         [
+        // "O ator deve estar cadastrado",
+        // "O ator deve ter selecionado a forma de pagamento"
+        // "O ator deve ter selecionado o local de entrega",
+        // "O ator estar na tela Finalizar Compra",
+
+        //         ],
+        //         [
+        // "A compra deve ser confirmada e finalizada ",
+
+        //         ],
+        //     )
+        // )
+
+        var node = document.getElementById("container-casos-de-uso")
+        node.innerHTML = ""
+        for(var i of casos){
+            node.innerHTML += "<a href='" + i.titulo.match(/UC[0-9]+/) + ".html'>" + i.titulo + "</a><br>"
+            gerarPagCasos(i)
+            console.log("==================================================================");
+            console.log("==================================================================");
+            console.log("==================================================================");
+            console.log("==================================================================");
+            
+        }
 
 
+        function gerarPagCasos(caso){
+            var txt = ""
+            txt += '<!DOCTYPE html>\n'
+            txt += '<html lang="pt-br">\n'
+            txt += '<head>\n'
+            txt += '<meta charset="UTF-8">\n'
+            txt += '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+            txt += '<meta http-equiv="X-UA-Compatible" content="ie=edge">\n'
+            txt += '<title>Yo - '+caso.titulo.match(/UC[0-9]+/)+'</title>\n'
+            txt += '<link rel="stylesheet" href="style-doc.css" type="text/css">\n'
+            txt += '\n'
+            txt += '</head>\n'
+            txt += '<body>\n'
+            txt += '<div class="links">\n'
+            txt += '<a href="doc.html" >Home</a>\n'
+            txt += '<a href="requisitos.html" >Requisitos</a>\n'
+            txt += '<a href="casos-de-uso.html" >Casos de Uso</a>\n'
+            txt += '\n'
+            txt += '</div>\n'
+            txt += '<div class="equipe" >\n'
+            txt += '<h1>Equipe</h1>\n'
+            txt += '<h2>Dayane Cristine</h2>\n'
+            txt += '<h2>Eduardo Paiva</h2>\n'
+            txt += '<h2>Felipe Braga</h2>\n'
+            txt += '<h2>Gabriel Queiroz</h2>\n'
+            txt += '<h2>Yasser Tuma</h2>\n'
+            txt += '</div>\n'
+            txt += '\n'
+            txt += '<div class="container">\n'
+            txt += '<h1>'+caso.titulo+'</h1>\n'
+            txt += '<h3>'+caso.descricao+'</h3>\n'
+            txt += 'Ator:\n'
+            txt += '<ul>\n'
+            for(var aux of caso.atores){
+                txt += '<li>'+aux+'</li>\n'
+            }
+            
+            
+            txt += '</ul>\n'
+            txt += 'Pre-Condições:\n'
+            txt += '<ul>\n'
+            for(var aux of caso.precond){
+                txt += '<li>'+aux+'</li>\n'
+            }
+            txt += '</ul>\n'
+            txt += 'Pos-Condições:\n'
+            txt += '<ul>\n'
+            for(var aux of caso.poscond){
+                txt += '<li>'+aux+'</li>\n'
+            }
+            txt += '</ul>\n'
+            txt += '</div>\n'
+            txt += '\n'
+            txt += '\n'
+            txt += '</body>\n'
+            txt += '</html>\n'
+
+            console.log(txt);
+                
 
 
+        }
 
+
+    </script>
+    
 </body>
 </html>
