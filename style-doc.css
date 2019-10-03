@@ -79,6 +79,10 @@ tr:hover{
     text-align: justify;
 }
 
+.doc-desc h1{
+    font-size: 24px;
+}
+
 .doc-gloss-title{
     font-weight: bold;
     font-size: 18px;
