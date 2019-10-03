@@ -1,6 +1,48 @@
+body{
+    margin-top: 40px;
+}
+
+.header-doc{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+
+}
+
+.links{
+    /* margin: 10px 0 0 10px; */
+}
+
+.links a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    background: rgb(190, 190, 190);
+    float: left;
+    margin: 7px 0 0 7px;
+    color: black;
+
+}.links a:hover{
+    background: rgb(210, 210, 210);
+    font-weight: bold;
+}.links a:active{
+    background: rgb(110, 110, 110);
+}
+
+
+
 .equipe{
     width: 100%; text-align: center;
 }
+
+
 
 .equipe h2{
     line-height: 0.53ch;
@@ -26,18 +68,3 @@ tr:hover{
     background: rgb(240, 240, 240)
 }
 
-.links{
-    position: fixed;
-}
-
-.links a{
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 3px;
-    background: white
-}.links a:hover{
-    background: rgb(240, 240, 240);
-}.links a:active{
-    background: rgb(210, 210, 210);
-}
