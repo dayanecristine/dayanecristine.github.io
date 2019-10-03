@@ -39,9 +39,10 @@ body{
 
 
 .equipe{
-    width: 100%; text-align: center;
-}
+    width: 100%; 
+    text-align: center;
 
+}
 
 
 .equipe h2{
@@ -50,7 +51,7 @@ body{
 
 .container{
     width: 100%;
-    padding: 50px;
+    padding: 5px 50px;
 }
 
 table{
@@ -68,3 +69,12 @@ tr:hover{
     background: rgb(240, 240, 240)
 }
 
+
+.doc-desc{
+    margin: 80px 20px;
+    border: 1px black solid;
+    padding: 20px;
+    height: auto;
+    font-size: 14px;
+    text-align: justify;
+}
