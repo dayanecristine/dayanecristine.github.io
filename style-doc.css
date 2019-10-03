@@ -1,5 +1,5 @@
 body{
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .header-doc{
@@ -63,12 +63,14 @@ table{
 
 tr{
     background: white;
+    border-bottom: 1px solid black;
 }
 
 tr:hover{
     background: rgb(240, 240, 240)
 }
 
+td{margin: 0 5px;}
 
 .doc-desc{
     margin: 80px 20px;
